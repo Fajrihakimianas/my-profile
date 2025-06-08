@@ -19,7 +19,7 @@ export default function Section({
       id={id}
       className={`py-20 ${backgrounds[background]} ${className}`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-4">
         {(title || subtitle) && (
           <div className="text-center mb-16">
             {title && (

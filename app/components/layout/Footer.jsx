@@ -35,11 +35,11 @@ export default function Footer() {
           {/* Logo & Copyright */}
           <div className="mb-6 md:mb-0">
             <div className="gradient-text text-2xl font-bold mb-2">
-              Alex.dev
+              Fajri Hakimi Anas
             </div>
             <p className="text-gray-400 flex items-center">
               Made with <Heart className="mx-1 text-red-400" size={16} /> by
-              Alex Johnson
+              Fajri Hakimi Anas
             </p>
             <p className="text-gray-500 text-sm mt-1">
               © {currentYear} All rights reserved.
@@ -66,8 +66,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-500 text-sm">
-            "Code is poetry written in logic" - Let's create something amazing
-            together!
+            Let's create something amazing together!
           </p>
         </div>
       </div>

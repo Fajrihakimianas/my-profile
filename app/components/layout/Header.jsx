@@ -32,7 +32,7 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="font-bold text-blue-600 gradient-text">
+            <a href="/" className="font-bold  gradient-text">
               <img
                 src="/seman-non-color.png"
                 alt="Logo"

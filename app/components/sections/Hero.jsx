@@ -14,12 +14,10 @@ export default function Hero() {
           <div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
               Hi, I'm{" "}
-              <span className="gradient-text text-blue-600">
-                {name.split(" ")[0]}
-              </span>
+              <span className="gradient-text">{name.split(" ")[0]}</span>
             </h1>
 
-            <p className="text-2xl md:text-5xl text-gray-700 mb-4 font-medium">
+            <p className="text-2xl md:text-5xl text-gray-800 mb-4 font-medium">
               {title}
             </p>
 

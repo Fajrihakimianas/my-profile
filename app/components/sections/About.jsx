@@ -1,5 +1,5 @@
 "use client";
-import { Code, Palette, Zap, Users } from "lucide-react";
+import { Palette, Zap, Users, CodeXml } from "lucide-react";
 import Section from "../ui/Section";
 import Card from "../ui/Card";
 import { portfolioData } from "../../data/portfolio";
@@ -9,7 +9,7 @@ export default function About() {
 
   const highlights = [
     {
-      icon: Code,
+      icon: CodeXml,
       title: "Clean Code",
       description:
         "Writing maintainable, scalable code that stands the test of time.",
@@ -17,16 +17,10 @@ export default function About() {
     },
     {
       icon: Palette,
-      title: "Design-Focused",
+      title: "Design",
       description:
         "Creating beautiful interfaces that users love to interact with.",
       color: "text-purple-500",
-    },
-    {
-      icon: Zap,
-      title: "Performance",
-      description: "Optimizing for speed and efficiency in every project.",
-      color: "text-yellow-500",
     },
     {
       icon: Users,
@@ -44,30 +38,41 @@ export default function About() {
       subtitle="Get to know me better and what drives my passion for development"
       background="gradient"
     >
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="grid lg:grid-cols-2 gap-16">
         {/* Left Column - Text Content */}
-        <div className="space-y-6">
-          <div className="prose prose-lg">
-            <p className="text-gray-700 leading-relaxed">
-              {bio} I'm currently based in{" "}
+        <div className="space-y-6 max-h-fit">
+          <div className="text-base">
+            <p className="indent-8 text-gray-700 leading-relaxed">
+              {bio} Saat ini saya berdomisili di{" "}
               <span className="font-semibold text-blue-600">{location}</span>,
-              where I spend my days crafting digital experiences that make a
-              difference.
+              menghabiskan hari-hari merancang pengalaman digital.
             </p>
 
-            <p className="text-gray-700 leading-relaxed">
-              My journey in tech started with curiosity and has evolved into a
-              deep passion for creating solutions that bridge the gap between
-              complex functionality and intuitive user experience. I believe
-              that great software should not only work flawlessly but also bring
-              joy to those who use it.
+            <p className="indent-8 text-gray-700 leading-relaxed">
+              Perjalanan saya di dunia teknologi dimulai dari hal yang tak
+              terduga - sebuah konten di Instagram. Sebagai lulusan Teknik
+              Elektro tanpa background IT sama sekali, saya merasa tertantang
+              untuk menyelami dunia yang asing ini. Tanpa mentor dan hanya
+              berbekal tekad, saya memulai perjalanan autodidak yang penuh
+              lika-liku.
             </p>
 
-            <p className="text-gray-700 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies,
-              contributing to open-source projects, or sharing knowledge with
-              the developer community. I'm always excited to take on new
-              challenges and collaborate with fellow creators.
+            <p className="indent-8 text-gray-700 leading-relaxed">
+              Butuh waktu hampir 2 tahun untuk benar-benar memahami dunia
+              coding, dimulai dari frontend yang terasa begitu rumit pada
+              awalnya. Namun, setiap error yang saya temui dan setiap bug yang
+              berhasil diperbaiki memberikan kepuasan tersendiri. Kini, saya
+              bangga bisa berkembang menjadi seorang Fullstack Developer yang
+              terus belajar dan bertumbuh.
+            </p>
+
+            <p className="indent-8 text-gray-700 leading-relaxed">
+              Yang membuat saya jatuh cinta dengan dunia tech adalah bagaimana
+              coding melatih otak untuk berpikir secara berbeda. Problem solving
+              yang kompleks, ketelitian dalam detail, dan kemampuan melihat
+              masalah dari berbagai sudut pandang - semua ini menjadi motivasi
+              saya untuk terus berkembang di bidang ini. Setiap project adalah
+              puzzle baru yang menantang kreativitas dan logika.
             </p>
           </div>
 
@@ -91,18 +96,19 @@ export default function About() {
         </div>
 
         {/* Right Column - Highlights Grid */}
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-1 gap-4">
           {highlights.map((item, index) => (
-            <Card key={index} className="p-6 text-center group" hover={true}>
+            <Card key={index} className="p-5 text-start group" hover={true}>
               <div
-                className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 ${item.color} mb-4 group-hover:scale-110 transition-transform duration-200`}
+                className={`inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 ${item.color} mb-4 group-hover:scale-110 transition-transform duration-200`}
               >
-                <item.icon size={32} />
+                <item.icon size={20} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">
                 {item.title}
               </h3>
-              <p className="text-gray-600">{item.description}</p>
+              <p className="text-sm text-gray-600">{item.description}</p>
             </Card>
           ))}
         </div>

@@ -2,10 +2,10 @@ export const portfolioData = {
   personal: {
     name: "Fajri Hakimi Anas",
     title: "Full Stack Developer",
-    bio: "Passionate developer with 3+ years of experience creating beautiful, functional web applications. I love turning complex problems into simple, elegant solutions.",
-    location: "San Francisco, CA",
-    email: "alex@example.com",
-    phone: "+1 (555) 123-4567",
+    bio: "Developer web dengan lebih dari 3 tahun pengalaman dalam menciptakan aplikasi web yang responsif dan berorientasi pada pengguna.",
+    location: "Yogyakarta, Indonesia",
+    email: "fajri.hakimianas@gmail.com",
+    phone: "+628211724022",
     social: {
       github: "https://github.com/alexjohnson",
       linkedin: "https://www.linkedin.com/in/fajrihakimianas/",
