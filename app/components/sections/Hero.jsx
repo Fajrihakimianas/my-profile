@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div className="w-full px-4 sm:px-6 lg:px-20">
-        <div className="text-start grid md:grid-cols-2 animate-fade-in">
+        <div className="grid md:grid-cols-2 animate-fade-in">
           {/* Main Content */}
           <div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
@@ -72,12 +72,9 @@ export default function Hero() {
 
           {/* Avatar */}
           <div className="mb-8 place-content-center">
-            <div className="size-64 mx-auto rounded-full bg-gradient-to-r from-blue-400 to-purple-500 p-1 animate-float">
-              <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-4xl font-bold text-gray-600">
-                {name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .join("")}
+            <div className="size-80 mx-auto rounded-full bg-gradient-to-r from-blue-400 to-purple-500 p-1 animate-float">
+              <div className="relative w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-4xl font-bold text-gray-600">
+                <img src="/foto.png" alt="Profile" className="object-cover" />
               </div>
             </div>
           </div>

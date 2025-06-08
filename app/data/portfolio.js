@@ -8,7 +8,7 @@ export const portfolioData = {
     phone: "+1 (555) 123-4567",
     social: {
       github: "https://github.com/alexjohnson",
-      linkedin: "https://linkedin.com/in/alexjohnson",
+      linkedin: "https://www.linkedin.com/in/fajrihakimianas/",
       twitter: "https://twitter.com/alexjohnson",
       dribbble: "https://dribbble.com/alexjohnson",
     },

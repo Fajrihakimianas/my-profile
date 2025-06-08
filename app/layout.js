@@ -4,28 +4,27 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Alex Johnson - Full Stack Developer & UI/UX Designer",
+  title: "Fajri Hakimi Anas - Full Stack Developer",
   description:
     "Passionate developer with 5+ years of experience creating beautiful, functional web applications. Portfolio showcasing modern web development projects.",
-  keywords:
-    "Full Stack Developer, UI/UX Designer, React, Next.js, Portfolio, Web Development",
-  authors: [{ name: "Alex Johnson" }],
-  creator: "Alex Johnson",
+  keywords: "Full Stack Developer, React, Next.js, Portfolio, Web Development",
+  authors: [{ name: "Fajri Hakimi Anas" }],
+  creator: "Fajri Hakimi Anas",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://alexjohnson.dev",
-    title: "Alex Johnson - Full Stack Developer & UI/UX Designer",
+    url: "https://fajrihakimianas.dev",
+    title: "Fajri Hakimi Anas - Full Stack Developer",
     description:
       "Passionate developer creating beautiful, functional web applications",
-    siteName: "Alex Johnson Portfolio",
+    siteName: "Fajri Hakimi Anas Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Johnson - Full Stack Developer & UI/UX Designer",
+    title: "Fajri Hakimi Anas - Full Stack Developer",
     description:
       "Passionate developer creating beautiful, functional web applications",
-    creator: "@alexjohnson",
+    creator: "@fajrihakimianas",
   },
 };
 

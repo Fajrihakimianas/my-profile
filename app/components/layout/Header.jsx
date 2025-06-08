@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled ? "bg-white/90 backdrop-blur-lg shadow-lg" : "bg-transparent"
       }`}
     >
@@ -32,8 +32,15 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold gradient-text">
-              Alex.dev
+            <a
+              href="/"
+              className="text-2xl font-bold text-blue-600 gradient-text"
+            >
+              <img
+                src="/seman-logo.png"
+                alt="Logo"
+                className="size-12 object-fit"
+              />
             </a>
           </div>
 
@@ -43,15 +50,12 @@ export default function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                className="text-indigo-900 hover:text-blue-600 font-medium transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
               </a>
             ))}
-            <Button variant="primary" size="sm">
-              <a href="#contact">Get In Touch</a>
-            </Button>
           </div>
 
           {/* Mobile menu button */}
