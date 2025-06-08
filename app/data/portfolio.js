@@ -47,16 +47,15 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "E-Commerce Coversuper",
       description:
         "Full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard. Built for scalability and performance.",
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      tags: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
+      image: "/coversuper.PNG",
+      tags: ["SvelteKit", "Node.js", "PostgreSQL", "AdonisJs"],
       liveUrl: "https://demo-ecommerce.com",
       githubUrl: "https://github.com/alexjohnson/ecommerce",
       featured: true,
-      color: "from-purple-500 to-pink-500",
+      color: "from-purple-50 to-pink-500",
     },
     {
       id: 2,

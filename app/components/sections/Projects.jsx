@@ -11,18 +11,16 @@ export default function Projects() {
   const otherProjects = projects.filter((project) => !project.featured);
 
   const ProjectCard = ({ project, featured = false }) => (
-    <Card
-      className={`group overflow-hidden ${featured ? "lg:col-span-2" : ""}`}
-    >
+    <Card className={`group overflow-hidden ${featured ? "" : ""}`}>
       {/* Project Image */}
-      <div className="relative overflow-hidden h-48 md:h-64">
+      <div className="relative overflow-hidden h-48 md:min-h-80">
         <div
-          className={`absolute inset-0 bg-gradient-to-r ${project.color} opacity-90`}
+          className={`absolute inset-0 bg-gradient-to-r ${project.color} opacity-30`}
         />
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-full object-fit group-hover:scale-110 transition-transform duration-300"
         />
         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300" />
 
@@ -57,7 +55,7 @@ export default function Projects() {
 
       {/* Project Info */}
       <div className="p-6">
-        <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center justify-between mb-2">
           <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
             {project.title}
           </h3>
@@ -69,7 +67,7 @@ export default function Projects() {
           )}
         </div>
 
-        <p className="text-gray-600 mb-4 leading-relaxed">
+        <p className="text-gray-600 mb-5 leading-relaxed">
           {project.description}
         </p>
 
@@ -78,7 +76,7 @@ export default function Projects() {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium"
+              className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-lg font-medium"
             >
               {tag}
             </span>
@@ -100,7 +98,7 @@ export default function Projects() {
         <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
           Featured Projects
         </h3>
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} featured={true} />
           ))}
