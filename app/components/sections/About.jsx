@@ -75,24 +75,6 @@ export default function About() {
               puzzle baru yang menantang kreativitas dan logika.
             </p>
           </div>
-
-          <div className="flex flex-wrap gap-3">
-            {[
-              "React",
-              "Next.js",
-              "TypeScript",
-              "Node.js",
-              "Nuxt.js",
-              "AdonisJS",
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
         </div>
 
         {/* Right Column - Highlights Grid */}
