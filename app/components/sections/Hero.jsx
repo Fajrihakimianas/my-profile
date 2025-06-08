@@ -72,7 +72,7 @@ export default function Hero() {
           <div className="mb-8 place-content-center">
             <div className="size-80 mx-auto rounded-full bg-gradient-to-r from-blue-400 to-purple-500 p-1 animate-float">
               <div className="relative w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-4xl font-bold text-gray-600">
-                <img src="/foto.png" alt="Profile" className="object-cover" />
+                <img src="/Foto.png" alt="Profile" className="object-cover" />
               </div>
             </div>
           </div>
