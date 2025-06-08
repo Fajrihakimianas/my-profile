@@ -11,7 +11,7 @@ export default function Section({
   const backgrounds = {
     white: "bg-white",
     gray: "bg-gray-50",
-    gradient: "bg-gradient-to-br from-blue-50 via-white to-purple-50",
+    gradient: "bg-gradient-to-br from-blue-50 via-white to-indigo-50",
   };
 
   return (
@@ -23,12 +23,12 @@ export default function Section({
         {(title || subtitle) && (
           <div className="text-center mb-16">
             {title && (
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 {title}
               </h2>
             )}
             {subtitle && (
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-lg text-gray-500 max-w-3xl mx-auto">
                 {subtitle}
               </p>
             )}

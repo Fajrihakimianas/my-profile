@@ -1,8 +1,8 @@
 export const portfolioData = {
   personal: {
-    name: "Alex Johnson",
-    title: "Full Stack Developer & UI/UX Designer",
-    bio: "Passionate developer with 5+ years of experience creating beautiful, functional web applications. I love turning complex problems into simple, elegant solutions.",
+    name: "Fajri Hakimi Anas",
+    title: "Full Stack Developer",
+    bio: "Passionate developer with 3+ years of experience creating beautiful, functional web applications. I love turning complex problems into simple, elegant solutions.",
     location: "San Francisco, CA",
     email: "alex@example.com",
     phone: "+1 (555) 123-4567",

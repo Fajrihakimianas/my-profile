@@ -77,8 +77,8 @@ export default function About() {
               "Next.js",
               "TypeScript",
               "Node.js",
-              "Python",
-              "UI/UX",
+              "Nuxt.js",
+              "AdonisJS",
             ].map((tech) => (
               <span
                 key={tech}
