@@ -8,8 +8,8 @@ export default function Hero() {
 
   return (
     <section className="min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <div className="w-full px-4 sm:px-6 lg:px-20">
-        <div className="grid md:grid-cols-2 animate-fade-in">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
+        <div className="grid md:grid-cols-2 justify-items-center animate-fade-in">
           {/* Main Content */}
           <div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
